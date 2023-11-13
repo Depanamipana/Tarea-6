@@ -5193,6 +5193,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2603890713186031114, guid: 8ce3a65da19a9514995dbfa17cf37ed2,
+        type: 3}
+      propertyPath: maxSteeringAngle
+      value: 42
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603890713186031114, guid: 8ce3a65da19a9514995dbfa17cf37ed2,
+        type: 3}
+      propertyPath: accelerationMultiplier
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 2603890713186031117, guid: 8ce3a65da19a9514995dbfa17cf37ed2,
         type: 3}
       propertyPath: m_RootOrder
