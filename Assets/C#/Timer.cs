@@ -9,7 +9,7 @@ public class Timer : MonoBehaviour
     public string escenaSiguiente; // Nombre de la escena a cargar cuando el temporizador llega a 0
 
     private float tiempoTranscurrido = 0f;
-    private bool temporizadorActivado = false;
+    public bool temporizadorActivado = false;
 
     void Start()
     {
@@ -22,17 +22,19 @@ public class Timer : MonoBehaviour
         if (temporizadorActivado)
         {
             tiempoTranscurrido -= Time.deltaTime;
-            ActualizarTextoTemporizador();
+            
 
             if (tiempoTranscurrido <= 0f)
             {
                 TiempoAgotado();
             }
+            ActualizarTextoTemporizador();
         }
     }
 
     void ActualizarTextoTemporizador()
     {
+        if(temporizadorActivado == false) return; 
         int minutos = Mathf.FloorToInt(tiempoTranscurrido / 60);
         int segundos = Mathf.FloorToInt(tiempoTranscurrido % 60);
         string tiempoTexto = string.Format("{0:00}:{1:00}", minutos, segundos);
@@ -57,12 +59,14 @@ public class Timer : MonoBehaviour
 
     public void IniciarTemporizador()
     {
+        
         // Inicia el temporizador
         temporizadorActivado = true;
     }
 
     public void DetenerTemporizador()
     {
+        this.enabled = false;
         // Detiene el temporizador
         temporizadorActivado = false;
     }
