@@ -12,8 +12,8 @@ public class Personaje : MonoBehaviour
         // Verifica si el objeto con el que colisionamos tiene el tag "Enemy"
         if (other.CompareTag("Enemy"))
         {
-            // Carga la escena especificada
-            CargarEscenaSiguiente();
+            // Invoca la función para cargar la escena con un retraso de 3 segundos
+            Invoke("CargarEscenaSiguiente", 2.1f);
         }
     }
 
