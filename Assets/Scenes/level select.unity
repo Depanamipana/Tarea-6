@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 20982454}
   - component: {fileID: 20982453}
   - component: {fileID: 20982452}
+  - component: {fileID: 20982455}
   m_Layer: 5
   m_Name: level 3
   m_TagString: Untagged
@@ -245,6 +246,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 20982450}
   m_CullTransparentMesh: 1
+--- !u!114 &20982455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 20982450}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 802ace26f60cfe143a5b14bfd150c907, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firstSceneName: city
 --- !u!1 &309485240
 GameObject:
   m_ObjectHideFlags: 0
@@ -1048,6 +1062,7 @@ GameObject:
   - component: {fileID: 1704778320}
   - component: {fileID: 1704778319}
   - component: {fileID: 1704778318}
+  - component: {fileID: 1704778321}
   m_Layer: 5
   m_Name: level 2
   m_TagString: Untagged
@@ -1158,6 +1173,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1704778316}
   m_CullTransparentMesh: 1
+--- !u!114 &1704778321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1704778316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 802ace26f60cfe143a5b14bfd150c907, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firstSceneName: Lvl 2
 --- !u!1 &1858313973
 GameObject:
   m_ObjectHideFlags: 0
@@ -1428,7 +1456,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 802ace26f60cfe143a5b14bfd150c907, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firstSceneName: city
+  firstSceneName: Lvl 1
 --- !u!1 &1863482964
 GameObject:
   m_ObjectHideFlags: 0
